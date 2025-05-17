@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
@@ -81,7 +83,7 @@ public class Listar extends AppCompatActivity {
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-                        // No necesitamos usar esta parte
+
                     }
                 },
                 new Response.ErrorListener() {
@@ -121,6 +123,7 @@ public class Listar extends AppCompatActivity {
                     public void onErrorResponse(VolleyError error) {
                         listaDatos.clear();
                         adapter.notifyDataSetChanged();
+                        Toast.makeText(Listar.this, "ID no encontrado", Toast.LENGTH_SHORT).show();
                         error.printStackTrace();
                     }
                 }
