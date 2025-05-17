@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DBD8D8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="Registro de Aplicaciones"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="24dp" />
+
+        <!-- Estilo de campo de entrada personalizado -->
+        <EditText
+            android:id="@+id/etNombre"
+            android:hint="Nombre de la aplicación"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:textColorHint="#878383"
+            android:layout_marginBottom="16dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etVersion"
+            android:hint="Versión del software"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:textColorHint="#878383"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etEspacio"
+            android:hint="Espacio requerido (MB)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:textColorHint="#878383"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etPrecio"
+            android:hint="Precio ($)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#878383"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnRegistrarSoftware"
+            android:text="Registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:text="Cancelar"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="#B00020"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="12dp"
+            android:elevation="2dp" />
+
+    </LinearLayout>
+</ScrollView>

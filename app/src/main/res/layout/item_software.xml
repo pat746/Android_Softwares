@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="12dp"
+    android:layout_marginHorizontal="8dp"
+    android:background="@drawable/rounded_border">
+
+    <!-- Nombre de la aplicación -->
+    <TextView
+        android:id="@+id/tvNombre"
+        android:text="Nombre: MS Office"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Versión -->
+    <TextView
+        android:id="@+id/tvVersion"
+        android:text="Versión: 365"
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Espacio -->
+    <TextView
+        android:id="@+id/tvEspacio"
+        android:text="Espacio: 3000 MB"
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Precio -->
+    <TextView
+        android:id="@+id/tvPrecio"
+        android:text="Precio: $120.00"
+        android:textSize="16sp"
+        android:textColor="#00796b"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Contenedor de botones en horizontal -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!-- Botón Eliminar -->
+        <Button
+            android:id="@+id/btnEliminar"
+            android:text="Eliminar"
+            android:textColor="#fff"
+            android:backgroundTint="#d32f2f"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Botón Editar -->
+        <Button
+            android:id="@+id/btnEditar"
+            android:text="Editar"
+            android:textColor="#fff"
+            android:backgroundTint="#1976d2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
